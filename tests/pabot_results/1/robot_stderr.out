@@ -1,0 +1,1 @@
+[ WARN ] The chromedriver version (121.0.6167.85) detected in PATH at G:\Chromedriver\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.94 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry

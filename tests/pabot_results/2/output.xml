@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-03-03T18:22:39.944806" rpa="false" schemaversion="5">
+<suite id="s1" name="testDemo6" source="G:\RFproject\tests\testDemo6.robot">
+<test id="s1-t1" name="Select the Form abd navigate to Child window" line="39">
+<kw name="Open the browser with the Mortgage payment url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:40.158309" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2024-03-03T18:22:40.657358" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at G:\Chromedriver\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.94 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-03-03T18:22:40.158309" elapsed="1.814798"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-03T18:22:41.974106" elapsed="0.133089"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:42.108191" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-03T18:22:42.107195" elapsed="0.959000"/>
+</kw>
+<status status="PASS" start="2024-03-03T18:22:40.158309" elapsed="2.907886"/>
+</kw>
+<kw name="Fill the Login Details and select the User Option" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:43.069050" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.067546" elapsed="0.142756"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:43.211394" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-03T18:22:43.291549" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.210302" elapsed="0.129521"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:43.340832" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.339823" elapsed="0.082249"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.423071" elapsed="0.249848"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:43.673919" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.672919" elapsed="0.065586"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.738505" elapsed="0.255908"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:43.994413" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-03-03T18:22:43.994413" elapsed="0.076449"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:44.071861" level="INFO">Selecting checkbox 'id:terms'.</msg>
+<arg>id:terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-03T18:22:44.070862" elapsed="0.073489"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-03-03T18:22:44.145345" level="INFO">Verifying checkbox 'id:terms' is selected.</msg>
+<arg>id:terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-03-03T18:22:44.144351" elapsed="0.034148"/>
+</kw>
+<status status="PASS" start="2024-03-03T18:22:43.067546" elapsed="1.110953"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-03T18:22:44.178499" elapsed="2.139628"/>
+</kw>
+<status status="PASS" start="2024-03-03T18:22:40.156802" elapsed="6.162229"/>
+</test>
+<doc>To validate the login form</doc>
+<status status="PASS" start="2024-03-03T18:22:39.956321" elapsed="6.363710"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testDemo6">testDemo6</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-03T18:22:40.657358" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at G:\Chromedriver\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.94 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
